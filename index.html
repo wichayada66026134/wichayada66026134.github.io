@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #e1c4ff, #2575fc);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header nav {
+            margin-top: 1rem;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+        header nav a:hover {
+            opacity: 0.7;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .sidebar {
+            background: #f7f9fc;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .main-content {
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .project {
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            text-align: center;
+            padding: 2rem;
+            color: white;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+        .project h3, .project p {
+            margin: 0;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .skill {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 2rem;
+            color: #fff;
+            background: #6a11cb;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .skill:hover {
+            transform: scale(1.1);
+        }
+        .skill.html {
+            background: #e34c26;
+        }
+        .skill.css {
+            background: #2965f1;
+        }
+        .skill.javascript {
+            background: #f7df1e;
+            color: #000;
+        }
+        .skill.react {
+            background: #61dafb;
+            color: #000;
+        }
+        .skill.nodejs {
+            background: #68a063;
+        }
+        .skill.figma {
+            background: #a259ff;
+        }
+        footer {
+            text-align: center;
+            background: #c7abf3;
+            color: white;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://scontent.fbkk5-1.fna.fbcdn.net/v/t39.30808-1/353838800_1485493425524395_1548801877365876369_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=109&ccb=1-7&_nc_sid=50d2ac&_nc_eui2=AeFOri28voEUS1jFKLsWuHMjBiW3IRlk0iYGJbchGWTSJm1uucaXP4vFPw5G5KYMEgTaxIKLUphmL3qPCddBtrtx&_nc_ohc=_lDuyn2kYP8Q7kNvgGUWpi-&_nc_zt=24&_nc_ht=scontent.fbkk5-1.fna&_nc_gid=Ay_CGgeaqhVzzoFduaycPp1&oh=00_AYCu9gfve7P4vGeTzHKram_KzwmgnmVVwoVHQp2aUj6IEQ&oe=675EAF1E" alt="Your Name" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem;">
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Hi, I'm Wichayada boonkurt, a passionate web developer currently studying at University of Phayao. I'm pursuing a degree in Software engineering, where I focus on learning new technologies and enhancing my skills in web development.</p>
+                <p>Always eager to learn and grow in the ever-evolving tech world. I love creating sleek, modern designs and responsive user interfaces.</p>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="projects">
+                    <div class="project" style="background-image: url('https://cdn.discordapp.com/attachments/1180520914794848336/1316179793133174884/Screenshot_2024-12-11_060509.png?ex=675a1b74&is=6758c9f4&hm=9c925c9ea47f54ab28b9f3b7e76dcbdebceb56b986ff9e020c89b36168c29f6b&/400x200');">
+                        <h3>Project One</h3>
+                    </div>
+                    <div class="project" style="background-image: url('https://cdn.discordapp.com/attachments/1180520914794848336/1316179701873643562/image.png?ex=675a1b5e&is=6758c9de&hm=382eb99e93e79d2500ee6cd2654ac282da561d85e2d5aa3406b2d77468eff819&/400x200');">
+                        <h3>Project Two</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <div class="skill html">&lt;/&gt;</div>
+                    <div class="skill css">#</div>
+                    <div class="skill javascript">JS</div>
+                    <div class="skill react">R</div>
+                    <div class="skill nodejs">N</div>
+                    <div class="skill figma">F</div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Connect with me on social media:</p>
+                <ul>
+                    <li><a href="https://www.facebook.com/wichayada.boonkurt.7" target="_blank">Facebook</a></li>
+                </ul>
+                <p>Phone: <a href="tel:+1234567890">093-6403500</a></p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Toon. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -301,9 +301,6 @@ footer p:nth-child(2){
 .skills{
   
     justify-content: space-between;
-    margin-bottom: 20px;
-    width: 48%;
-    display: flex;
 }
 
 .skills-grid{
@@ -325,6 +322,7 @@ footer p:nth-child(2){
 
 .skills span i{
     font-size: 25px;
+    margin-left: 20px;
 }
 
 .skills span p{

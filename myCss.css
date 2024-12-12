@@ -61,6 +61,7 @@ nav ul li a:hover{
     top: 50%;
     left: 8%;
     transform: translateY(-50%);
+
 }
 
 h1{
@@ -103,21 +104,26 @@ h4{
     width: 100%;
     padding: 100px 0px;
     background-color: black;
+  
 }
 .about img{
     height: auto;
-    width: 430px;
+    width: 350px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 5px rgba(0, 128, 255, 0.6);
 }
 .about-text{
     width: 550px;
+    margin-left: 150px;
 }
 .main{
     width: 1130px;
-    max-width: 95%;
-    margin: 0 auto;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-left: 175px;
+
 }
 
 .about-text h2{
@@ -141,4 +147,108 @@ h4{
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
+}
+button{
+    background-color: rgba(0, 128, 255, 0.6);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    margin-left: 160px;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid rgba(0, 128, 255, 0.6);
+    cursor: pointer;
+}
+
+.service{
+    background-color: black;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background:#191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: rgba(0, 128, 255, 0.6);
+}
+
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: rgba(159, 211, 251, 0.8);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button{
+    background-color: rgba(0, 128, 255, 0.6);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid rgba(0, 128, 255, 0.6);
+    cursor: pointer;
+}
+
+.contact-me{
+    width: 100%;
+    height: 290px;
+    background: black;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.contact-me p{
+    color: white;
+    
 }

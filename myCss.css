@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
 *{
+    font-family: "Poppins", serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+
 
 .hero{
     height: 100vh;
@@ -148,22 +154,6 @@ h4{
     font-size: 18px;
     margin-bottom: 45px;
 }
-button{
-    background-color: rgba(0, 128, 255, 0.6);
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 13px 30px;
-    border-radius: 30px;
-    transition: .4s;
-    margin-left: 160px;
-}
-button:hover{
-    background-color: transparent;
-    border: 2px solid rgba(0, 128, 255, 0.6);
-    cursor: pointer;
-}
 
 .service{
     background-color: black;
@@ -186,7 +176,7 @@ button:hover{
     min-height: 400px;
 }
 .card{
-    height: 365px;
+    height: 380px;
     width: 335px;
     padding: 20px 35px;
     background: #191919;;
@@ -233,40 +223,6 @@ h5{
 }
 
 .card .button:hover{
-    background-color: transparent;
-    border: 2px solid rgba(0, 128, 255, 0.6);
-    cursor: pointer;
-}
-
-.contact-me{
-    width: 100%;
-    height: 290px;
-    background: black;
-    display: flex;
-    align-items: center;
-    flex-direction:column;
-    justify-content: center;
-}
-
-.contact-me p{
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 25px;
-}
-
-.contact-me .button-two{
-    background-color: rgba(0, 128, 255, 0.6);
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 9px 22px;
-    border-radius: 30px;
-    transition: .4s;
-}
-
-.contact-me .button-two:hover{
     background-color: transparent;
     border: 2px solid rgba(0, 128, 255, 0.6);
     cursor: pointer;
@@ -322,4 +278,93 @@ footer p:nth-child(2){
     color: rgba(0, 128, 255, 0.6) ;
     bottom: 35px;
     font-size: 14px;
+}
+
+.Skill{
+    background: black;
+    text-align: center;
+}
+
+.section_text_p1{
+    font-size: large;
+    color: rgba(159, 211, 251, 0.8);
+    text-align: center;
+    margin: 0;
+}
+
+.section_text_p2{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin: 10px 0 20px;
+}
+.skills{
+  
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 48%;
+    display: flex;
+}
+
+.skills-grid{
+    background-color: transparent;
+    border: 2px solid rgba(0, 128, 255, 0.6);
+    width: 700px;
+    height: auto;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin-left: 400px;
+}
+
+.skills span {
+    margin-right: 10px; 
+}
+
+.skills span i{
+    font-size: 25px;
+}
+
+.skills span p{
+    font-size: 20px;
+}
+
+.skills p{
+    color: white;
+}
+
+.skills p {
+    margin-bottom: 5px;
+    margin-left: 2px;
+}
+
+.skills span i {
+    display: inline;
+    margin-right: 5px;
+}
+
+.scroll-to-home-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 128, 255, 0.6); 
+    color: white;
+    width: 50px;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.scroll-to-home-btn:hover{
+    background-color: transparent;
+    border: 2px solid rgba(0, 128, 255, 0.6);
+    cursor: pointer;
 }
